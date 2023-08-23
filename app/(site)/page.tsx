@@ -1,7 +1,11 @@
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
-    <div>
-      <p className="font-semibold text-2xl text-center mt-12 text-purple-700">Main Content</p>
+    <div className='bg-neutral-900 rounded-lg h-full overflow-hidden overflow-y-auto md:mr-2'>
+      <Header>
+       
+      </Header>
     </div>
   )
 }
