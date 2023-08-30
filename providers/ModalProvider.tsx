@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import Modal from '@/components/Modal';
+
 import AuthModal from '@/components/AuthModal';
 import UploadModal from '@/components/UploadModal';
 import SubscribeModal from '@/components/SubscribeModal';
@@ -25,16 +25,7 @@ const ModalProvider = () => {
 
     return (
         <>  
-            <Modal 
-            title="Test Modal" 
-            description='Test Description'
-            isOpen
-            onChange={() => {}}>
-                Test Children
-            </Modal>
             <AuthModal />
-            <UploadModal />
-            <SubscribeModal  />
         </>
     );
 };
