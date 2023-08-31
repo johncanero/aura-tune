@@ -26,6 +26,7 @@ const ModalProvider = () => {
     return (
         <>  
             <AuthModal />
+            <UploadModal />
         </>
     );
 };

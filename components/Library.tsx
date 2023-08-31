@@ -3,10 +3,23 @@
 import { MdLibraryMusic } from 'react-icons/md';
 import { AiOutlinePlus } from 'react-icons/ai';
 
+import useAuthModal from '@/hooks/useAuthModal';
+import useUploadModal from '@/hooks/useUploadModal';
+import { useUser } from '@/hooks/useUser';
+
 const Library = () => {
+    const authModal = useAuthModal();
+    const uploadModal = useUploadModal();
+    const { user, subscription } = useUser();
 
     const onClick = () => {
-        // Handle upload later
+        if (!user) {
+            return authModal.onOpen();
+        }
+
+        // TODO: Check for subscription
+        
+        return uploadModal.onOpen();
     };
 
     return (
