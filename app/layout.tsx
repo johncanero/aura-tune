@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+import { Figtree } from 'next/font/google';
 import Sidebar from '@/components/Sidebar';
 
-import { Figtree } from 'next/font/google';
 import SupabaseProvider from '@/providers/SupabaseProvider';
+import ToasterProvider from '@/providers/ToasterProvider';
 import UserProvider from '@/providers/UserProvider';
 import ModalProvider from '@/providers/ModalProvider';
 
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
             <ModalProvider />
