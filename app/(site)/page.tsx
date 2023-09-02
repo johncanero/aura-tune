@@ -20,8 +20,8 @@ export default async function Home() {
         <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 mt-4'>
           <ListItem
             image='/images/liked.png'
-            name='Favorites'
-            href='favorites'
+            name='Liked'
+            href='liked'
           />
         </div>
       </Header>
