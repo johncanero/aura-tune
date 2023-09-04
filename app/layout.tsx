@@ -16,6 +16,10 @@ const font = Figtree({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'AuraTune',
   description: 'Listen and Stream to Music',
+  icons: {
+    icon: '/images/auraTuneIcon.png',
+    shortcut: '/images/auraTuneIcon.png',
+  },
 }
 
 export const revalidate = 0;

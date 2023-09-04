@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 import { RxCaretLeft, RxCaretRight } from 'react-icons/rx';
 import { useRouter } from 'next/navigation';
@@ -91,6 +92,13 @@ const Header = ({ children, className }: HeaderProps) => {
                             <Button className='bg-white px-6py-2' onClick={handleLogout}>
                                 Logout
                             </Button>
+
+                            <Image
+                                src="/images/auraTuneIcon.png"
+                                width={40}
+                                height={40}
+                                alt="AuraTune Icon"
+                            />
 
                             <Button
                                 onClick={() => router.push('/account')}
